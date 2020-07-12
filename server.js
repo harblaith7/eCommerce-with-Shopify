@@ -27,8 +27,8 @@ app.prepare().then(() => {
       scopes: [
           'read_products', 
           'write_products',
-          'read_script_tags',
-          'write_script_tags'
+          'read_script_tag',
+          'write_script_tag'
         ],
       afterAuth(ctx) {
         const { shop, accessToken } = ctx.session;
