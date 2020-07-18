@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js",
+    "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "dependencies": {
     "@shopify/koa-shopify-auth": "^3.1.65",
     "@shopify/koa-shopify-graphql-proxy": "^4.0.1",
+    "@shopify/polaris": "^4.27.0",
     "dotenv": "^8.2.0",
     "isomorphic-fetch": "^2.2.1",
     "koa": "^2.13.0",
